@@ -6,7 +6,56 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7de7b830-2f8a-49b4-beb1-6bb9303d1f41" name="Default" comment="" />
+    <list default="true" id="7de7b830-2f8a-49b4-beb1-6bb9303d1f41" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/Party_Commands.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/ReitzRPGMain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/PartyConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/WorldConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/Custom_Recipes/Custom_Arrows.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/Enum/Enchantment_Damage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/Enum/Weapon_Damage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/Hologram/Hologram.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Party.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Party_API.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Party_Queue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Scoreboard_API.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Scoreboard_Custom.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/PlayerData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/ReitzRPGMMO_Commands.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/ReitzRPGMMO_Commands.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerData.java" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerData/PlayerData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/ConfigFiles/API.class" afterPath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/ConfigFiles/API.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/ConfigFiles/DebugConfig.class" afterPath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/ConfigFiles/DebugConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/ConfigFiles/FileManager.class" afterPath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/ConfigFiles/FileManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/ConfigFiles/PlayerConfig.class" afterPath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/ConfigFiles/PlayerConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/Main.class" afterPath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsDamage.class" afterPath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsDamage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsHealth.class" afterPath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsHealth.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerExitStatSave.class" afterPath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerExitStatSave.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerJoinStatSetup.class" afterPath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerJoinStatSetup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/PlayerCombatRelated/CheckPlayerCombatLevelUp.class" afterPath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/PlayerCombatRelated/CheckPlayerCombatLevelUp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/PlayerCombatRelated/PlayerAttackingMonster.class" afterPath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/PlayerCombatRelated/PlayerAttackingMonster.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/PlayerCombatRelated/PlayerDefeatsMonster.class" afterPath="$PROJECT_DIR$/out/production/ReitzMMO/com/paully104/reitzmmo/PlayerCombatRelated/PlayerDefeatsMonster.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ReitzMMO_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ReitzMMO_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/spigot_api_1_9_R0_1_SNAPSHOT_shaded.xml" afterPath="$PROJECT_DIR$/.idea/libraries/spigot_api_1_9_R0_1_SNAPSHOT_shaded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReitzMMO.iml" afterPath="$PROJECT_DIR$/ReitzMMO.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ReitzMMO/plugin.yml" afterPath="$PROJECT_DIR$/out/production/ReitzMMO/plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/API.java" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/API.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/DebugConfig.java" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/DebugConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/FileManager.java" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/FileManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/PlayerConfig.java" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/PlayerConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/Main.java" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsDamage.java" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsDamage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsHealth.java" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsHealth.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerExitStatSave.java" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerExitStatSave.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerJoinStatSetup.java" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerJoinStatSetup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/CheckPlayerCombatLevelUp.java" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/CheckPlayerCombatLevelUp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/PlayerAttackingMonster.java" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/PlayerAttackingMonster.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/PlayerDefeatsMonster.java" afterPath="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/PlayerDefeatsMonster.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/plugin.yml" afterPath="$PROJECT_DIR$/src/plugin.yml" />
+    </list>
     <ignored path="ReitzMMO.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,73 +76,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="API.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/API.java">
+      <file leaf-file-name="ReitzRPGMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/ReitzRPGMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#980#981#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-319">
+              <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OnPlayerJoinStatSetup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerJoinStatSetup.java">
+      <file leaf-file-name="Party_Commands.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/Party_Commands.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-455">
+              <caret line="125" column="55" selection-start-line="125" selection-start-column="55" selection-end-line="125" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scoreboard_API.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Scoreboard_API.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DebugConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/DebugConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/FileManager.java">
+      <file leaf-file-name="Custom_Arrows.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Custom_Recipes/Custom_Arrows.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="23" column="81" selection-start-line="23" selection-start-column="81" selection-end-line="23" selection-end-column="81" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MonsterConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/MonsterConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
-              <caret line="126" column="56" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/PlayerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,44 +121,65 @@
       <file leaf-file-name="MonsterLevelsDamage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsDamage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="395">
+              <caret line="443" column="9" selection-start-line="443" selection-start-column="9" selection-end-line="443" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MonsterLevelsHealth.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MonsterLevelsHealth.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsHealth.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="92" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scoreboard_Custom.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Scoreboard_Custom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1187#1188#0" expanded="true" />
+                <element signature="e#1248#1249#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerDefeatsMonster.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/PlayerDefeatsMonster.java">
+      <file leaf-file-name="Enchantment_Damage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Enum/Enchantment_Damage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="83" />
+            <state relative-caret-position="136">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Weapon_Damage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Enum/Weapon_Damage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
+                <element signature="e#571#572#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerAttackingMonster.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/PlayerAttackingMonster.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="86" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
+            <state relative-caret-position="-47">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,6 +195,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -175,21 +216,42 @@
         <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/API.java" />
         <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/CombatRelated/MonsterLevelsHealth.java" />
         <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/CombatRelated/MonsterLevelsDamage.java" />
-        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerJoinStatSetup.java" />
-        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/PlayerDefeatsMonster.java" />
         <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/MonsterHealthConfig.java" />
-        <option value="$PROJECT_DIR$/src/plugin.yml" />
-        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsHealth.java" />
         <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/MonsterConfig.java" />
-        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/CheckPlayerCombatLevelUp.java" />
-        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerExitStatSave.java" />
-        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/FileManager.java" />
-        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/DebugConfig.java" />
-        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/PlayerConfig.java" />
-        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/API.java" />
-        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerData/PlayerData.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/ReitzRPGMMO_Commands.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/ReitzRPG_Tokens.java" />
+        <option value="$USER_HOME$/AppData/Local/McMyAdmin/Minecraft/Spigot/Spigot-API/target/spigot-api-1.10.2-R0.1-SNAPSHOT-shaded.jar!/org/bukkit/command/CommandExecutor.class" />
         <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsDamage.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/ReitzRPG_Purchase.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerExitStatSave.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/PlayerConfig.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/CustomMobs/Fast_Zombie.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/CustomMobs/FastZombie.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Hologram/Hologram.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/WorldConfig.java" />
+        <option value="$PROJECT_DIR$/src/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Enum/Enchantment_Damage.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Party_Queue.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Party.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/FileManager.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/API.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/PartyConfig.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/DebugConfig.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/CheckPlayerCombatLevelUp.java" />
         <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/PlayerAttackingMonster.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Party_API.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Scoreboard_API.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerJoinStatSetup.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Scoreboard_Custom.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Custom_Recipes/Custom_Arrows.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Enum/Weapon_Damage.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/PlayerDefeatsMonster.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/Party_Commands.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/ReitzRPGMain.java" />
+        <option value="$PROJECT_DIR$/src/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsHealth.java" />
       </list>
     </option>
   </component>
@@ -201,10 +263,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="409" />
-    <option name="y" value="17" />
-    <option name="width" value="1486" />
-    <option name="height" value="1000" />
+    <option name="x" value="-1928" />
+    <option name="y" value="-7" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -231,9 +293,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -242,21 +302,266 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reitzmmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reitzmmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayerCombatRelated" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reitzmmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Party_System" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reitzmmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnPlayerEvents" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reitzmmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MonsterCombatRelated" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reitzmmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hologram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reitzmmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reitzmmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Custom_Recipes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reitzmmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConfigFiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReitzMMO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reitzmmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Command_Handlers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Minecraft/BuildToolsFolders/Spigot/Spigot-API/target/spigot-api-1.9-R0.1-SNAPSHOT-shaded.jar!/" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="C:/New_Minecraft/Spigot/Spigot-API/target/spigot-api-1.11.2-R0.1-SNAPSHOT-shaded.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Paul\IdeaProjects\ReitzMMO\src\com\paully104\reitzmmo\ConfigFiles" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Paul\IdeaProjects\ReitzRPG" />
     </key>
   </component>
   <component name="RunManager">
@@ -512,33 +817,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="409" y="17" width="1486" height="1000" extended-state="0" />
+    <frame x="-1928" y="-7" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3372093" sideWeight="0.49375" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3372093" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23537415" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33820224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -561,25 +866,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/API.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerJoinStatSetup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,9 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -597,9 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="23" column="81" selection-start-line="23" selection-start-column="81" selection-end-line="23" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -607,9 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2091">
           <caret line="126" column="56" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -617,9 +898,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -627,9 +906,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -637,9 +914,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -647,9 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -657,9 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -673,24 +942,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ReitzRPGMMO_Commands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/ReitzRPGMMO_Commands.java" />
     <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerJoinStatSetup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerData.java">
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerData/PlayerData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1547">
           <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
@@ -704,107 +964,244 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ReitzRPGMMO_Commands.java">
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/ReitzRPGMMO_Commands.java" />
+    <entry file="file://$PROJECT_DIR$/ReitzMMO.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerData.java">
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/ReitzRPG_Tokens.java" />
+    <entry file="jar://$USER_HOME$/AppData/Local/McMyAdmin/Minecraft/Spigot/Spigot-API/target/spigot-api-1.10.2-R0.1-SNAPSHOT-shaded.jar!/org/bukkit/command/CommandExecutor.class" />
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/ReitzRPG_Purchase.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerData/PlayerData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/CustomMobs/Fast_Zombie.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/CustomMobs/FastZombie.java" />
     <entry file="file://$PROJECT_DIR$/src/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="221">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <marker date="1469849869035" expanded="true" signature="427:433" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Scoreboards.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/PlayerAttackingMonster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/PlayerDefeatsMonster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/CheckPlayerCombatLevelUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerExitStatSave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerJoinStatSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/MonsterConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="126" column="56" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/FileManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="81" selection-start-line="23" selection-start-column="81" selection-end-line="23" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="446">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/API.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        <state relative-caret-position="306">
+          <caret line="24" column="125" selection-start-line="24" selection-start-column="125" selection-end-line="24" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Hologram/Hologram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/DebugConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Party_Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Party.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Party_API.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerJoinStatSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/OnPlayerEvents/OnPlayerExitStatSave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="100" selection-start-line="25" selection-start-column="100" selection-end-line="25" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/WorldConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/PlayerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="238">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/PartyConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/MonsterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="126" column="56" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/FileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/ConfigFiles/DebugConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/ReitzRPGMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-319">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Scoreboard_API.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Party_System/Scoreboard_Custom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Command_Handlers/Party_Commands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-455">
+          <caret line="125" column="55" selection-start-line="125" selection-start-column="55" selection-end-line="125" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Enum/Enchantment_Damage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Enum/Weapon_Damage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/Custom_Recipes/Custom_Arrows.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -813,41 +1210,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsDamage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="395">
+          <caret line="443" column="9" selection-start-line="443" selection-start-column="9" selection-end-line="443" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/MonsterCombatRelated/MonsterLevelsHealth.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/PlayerDefeatsMonster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/paully104/reitzmmo/PlayerCombatRelated/PlayerAttackingMonster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="86" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="92" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -910,7 +1283,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

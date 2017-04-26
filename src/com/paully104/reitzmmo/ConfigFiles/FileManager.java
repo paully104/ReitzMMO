@@ -13,6 +13,8 @@ public class FileManager
     public static File monsterHPConfig;
     public static File playerConfig;
     public static File debugConfig;
+    public static File worldConfig;
+    public static File partyConfig;
 
 
 
@@ -22,6 +24,8 @@ public class FileManager
         monsterHPConfig = new File("plugins/ReitzMMO/MonsterSettings/MonsterConfig.yml");
         playerConfig = new File("plugins/ReitzMMO/PlayerSettings/PlayerConfig.yml");
         debugConfig = new File("plugins/ReitzMMO/DebugSettings/DebugConfig.yml");
+        worldConfig = new File("plugins/ReitzMMO/WorldSettings/WorldConfig.yml");
+        partyConfig = new File("plugins/ReitzMMO/PartySettings/PartyConfig.yml");
 
 
 

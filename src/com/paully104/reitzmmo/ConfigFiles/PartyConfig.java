@@ -6,19 +6,19 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by Paul on 3/23/2016.
+ * Created by Paul on 8/1/2016.
  */
-public class DebugConfig {
+public class PartyConfig {
     public static void Configuration()
     {
-        File file = FileManager.debugConfig;
+        File file = FileManager.partyConfig;
         YamlConfiguration configuration = YamlConfiguration.loadConfiguration(file);
-        configuration.options().header("This config is used to set all debug options");
+        configuration.options().header("This config is used to set all party configurations");
 
-        configuration.addDefault("MonsterAttackingPlayer", true);
-        configuration.addDefault("PlayerAttackingMonster", true);
-        configuration.addDefault("PlayerLevelUp", true);
-        configuration.addDefault("PartyEXP", true);
+        configuration.addDefault("PartyEXPMaxDistance", 100);
+
+
+
 
 
 
@@ -40,4 +40,5 @@ public class DebugConfig {
 
         }
     }
+
 }

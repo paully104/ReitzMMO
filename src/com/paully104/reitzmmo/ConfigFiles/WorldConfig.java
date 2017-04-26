@@ -6,25 +6,19 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by Paul on 3/23/2016.
+ * Created by Paul on 7/29/2016.
  */
-public class DebugConfig {
+public class WorldConfig {
+
     public static void Configuration()
     {
-        File file = FileManager.debugConfig;
+        File file = FileManager.worldConfig;
         YamlConfiguration configuration = YamlConfiguration.loadConfiguration(file);
-        configuration.options().header("This config is used to set all debug options");
+        configuration.options().header("This config is used to set all world levels configurations");
 
-        configuration.addDefault("MonsterAttackingPlayer", true);
-        configuration.addDefault("PlayerAttackingMonster", true);
-        configuration.addDefault("PlayerLevelUp", true);
-        configuration.addDefault("PartyEXP", true);
-
-
-
-
-
-
+        configuration.addDefault("world", 1);
+        configuration.addDefault("world_nether", 15);
+        configuration.addDefault("world_the_end", 30);
         configuration.options().copyDefaults(true);
 
         try

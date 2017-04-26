@@ -3,9 +3,13 @@ version: 1.0
 author: Paully104
 main: com.paully104.reitzmmo.Main
 commands:
-        ReitzMMO:
+        reitz:
                      description: Main ReitzRPGMMO command listings
-                     usage: /ReitzRPGMMO
-        RRM:
+                     usage: /reitz
+        rrm:
                      description: Main ReitzRPGMMO command listings
-                     usage: /RRM
+                     usage: /rrm
+        rparty:
+                    description: Party system for ReitzRPGMMO
+                    usage: /rparty
+

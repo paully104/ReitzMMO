@@ -1,7 +1,7 @@
 package com.paully104.reitzmmo.OnPlayerEvents;
 
 import com.paully104.reitzmmo.ConfigFiles.API;
-import com.paully104.reitzmmo.PlayerData;
+import com.paully104.reitzmmo.PlayerData.PlayerData;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

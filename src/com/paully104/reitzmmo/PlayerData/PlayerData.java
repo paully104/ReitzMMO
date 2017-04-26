@@ -1,4 +1,4 @@
-package com.paully104.reitzmmo;
+package com.paully104.reitzmmo.PlayerData;
 
 import java.io.File;
 import java.io.IOException;
