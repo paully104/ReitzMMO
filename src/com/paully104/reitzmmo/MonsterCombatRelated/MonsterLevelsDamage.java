@@ -39,6 +39,8 @@ public class MonsterLevelsDamage implements Listener {
     private final int cavespiderBaseAttack = API.monsterConfig.getInt("CAVESPIDER_BASE_ATTACK");
     private final int blazeBaseAttack  = API.monsterConfig.getInt("BLAZE_BASE_ATTACK");
     private final int witchBaseAttack  = API.monsterConfig.getInt("WITCH_BASE_ATTACK");
+    private final int witherSkeletonBaseAttack = API.monsterConfig.getInt("WITHERSKELETON_BASE_ATTACK");
+    private final int shulkerBaseAttack = API.monsterConfig.getInt("SHULKER_BASE_ATTACK");
     
     //debug section
     private final boolean debugEnabled = API.debugConfig.getBoolean("MonsterAttackingPlayer");
@@ -405,6 +407,19 @@ public class MonsterLevelsDamage implements Listener {
             e.setDamage(damage_done);
             if(debugEnabled) {System.out.println("[MAP]: " + attacker.getType() + " " + attacker.getCustomName() +                     " -> " + defender.getName() + " " + player_defense);}
         }
+        //witherSkeleton
+        else if((defender.getType() == EntityType.PLAYER && !(attacker.getType() == EntityType.ARROW) && attacker.getType() == EntityType.WITHER_SKELETON)) {
+            PlayerData pd = API.Players.get(defender.getName());
+            player_defense = pd.getData().getInt("Level");
+            monster_level_from_name = attacker.getCustomName().replaceAll("\\D+", "");
+            monster_attack = Integer.parseInt(monster_level_from_name) * witherSkeletonBaseAttack;
+            damage_done = monster_attack - player_defense;
+            if (damage_done < 1) {
+                damage_done = 1;
+            }
+            e.setDamage(damage_done);
+            if(debugEnabled) {System.out.println("[MAP]: " + attacker.getType() + " " + attacker.getCustomName() +                     " -> " + defender.getName() + " " + player_defense);}
+        }
         //Blaze
         else if((defender.getType() == EntityType.PLAYER && !(attacker.getType() == EntityType.ARROW) && attacker.getType() == EntityType.BLAZE)) {
             PlayerData pd = API.Players.get(defender.getName());
@@ -429,6 +444,29 @@ public class MonsterLevelsDamage implements Listener {
                 player_defense = pd.getData().getInt("Level");
                 monster_level_from_name = ((Witch) arrow.getShooter()).getCustomName().replaceAll("\\D+", "");
                 monster_attack = Integer.parseInt(monster_level_from_name) * witchBaseAttack;
+                damage_done = monster_attack - player_defense;
+                if (damage_done < 1) {
+                    damage_done = 1;
+                }
+                e.setDamage(damage_done);
+                if(debugEnabled) {System.out.println("[MAP]: " + attacker.getType() + " " + attacker.getCustomName() +                     " -> " + defender.getName() + " " + player_defense);}
+            }
+            else
+            {
+
+                //Not from skeleton archer
+            }
+        }
+        //SHULKER
+        else if(defender.getType() == EntityType.PLAYER && (attacker.getType() == EntityType.SHULKER_BULLET))
+        {
+            Arrow arrow = (Arrow)attacker;
+            if (arrow.getShooter() instanceof Shulker)
+            {
+                PlayerData pd = API.Players.get(defender.getName());
+                player_defense = pd.getData().getInt("Level");
+                monster_level_from_name = ((Witch) arrow.getShooter()).getCustomName().replaceAll("\\D+", "");
+                monster_attack = Integer.parseInt(monster_level_from_name) * shulkerBaseAttack;
                 damage_done = monster_attack - player_defense;
                 if (damage_done < 1) {
                     damage_done = 1;

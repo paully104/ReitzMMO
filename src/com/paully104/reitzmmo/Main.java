@@ -4,13 +4,20 @@ import com.paully104.reitzmmo.Command_Handlers.Party_Commands;
 import com.paully104.reitzmmo.Command_Handlers.ReitzRPGMain;
 import com.paully104.reitzmmo.ConfigFiles.*;
 import com.paully104.reitzmmo.Custom_Recipes.Custom_Arrows;
+import com.paully104.reitzmmo.Custom_Recipes.Custom_Bows;
+import com.paully104.reitzmmo.Menu.Menu;
+import com.paully104.reitzmmo.Menu.Party_Menu;
+import com.paully104.reitzmmo.Menu.Town_Menu;
+import com.paully104.reitzmmo.Menu.Weaponskill_Menu;
 import com.paully104.reitzmmo.MonsterCombatRelated.MonsterLevelsDamage;
 import com.paully104.reitzmmo.MonsterCombatRelated.MonsterLevelsHealth;
 import com.paully104.reitzmmo.OnPlayerEvents.OnPlayerExitStatSave;
 import com.paully104.reitzmmo.OnPlayerEvents.OnPlayerJoinStatSetup;
+import com.paully104.reitzmmo.Party_System.Scoreboard_Custom;
 import com.paully104.reitzmmo.PlayerCombatRelated.PlayerAttackingMonster;
 import com.paully104.reitzmmo.PlayerCombatRelated.PlayerDefeatsMonster;
 import com.paully104.reitzmmo.PlayerData.PlayerData;
+import com.paully104.reitzmmo.Skills.Weapon_Skills;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -40,6 +47,8 @@ public class Main extends JavaPlugin {
         DebugConfig.Configuration();
         WorldConfig.Configuration();
         PartyConfig.Configuration();
+        WeaponskillConfig.Configuration();
+        CustomBowConfig.Configuration();
 
         //Set API data for quicker config reading
         API.setMonsterConfig();
@@ -47,6 +56,8 @@ public class Main extends JavaPlugin {
         API.setDebugConfig();
         API.setWorldConfig();
         API.setPartyConfig();
+        API.setWeaponskillConfig();
+        API.setcustombowConfig();
 
         //Main Commands
         this.getCommand("reitz").setExecutor(new ReitzRPGMain());
@@ -55,10 +66,17 @@ public class Main extends JavaPlugin {
 
         //Register Events
         registerEvents(this,new OnPlayerJoinStatSetup(), new MonsterLevelsHealth(), new OnPlayerExitStatSave(),
-        new MonsterLevelsDamage(), new PlayerAttackingMonster(),new PlayerDefeatsMonster());
+        new MonsterLevelsDamage(), new PlayerAttackingMonster(),new PlayerDefeatsMonster(), new Menu(), new Party_Menu(),
+                new Weaponskill_Menu(), new Weapon_Skills(), new Scoreboard_Custom(), new Town_Menu());
 
         //SetCustomItems
         Custom_Arrows.setCustomArrow();
+        Custom_Bows.setCustomWoodBow();
+        Custom_Bows.setStoneBow();
+        Custom_Bows.setIronBow();
+        Custom_Bows.setGoldBow();
+        Custom_Bows.setDiamondBow();
+        Custom_Bows.setLlamaBow();
 
     }
     @Override

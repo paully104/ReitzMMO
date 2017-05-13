@@ -1,7 +1,6 @@
 package com.paully104.reitzmmo.OnPlayerEvents;
 
 import com.paully104.reitzmmo.ConfigFiles.API;
-import com.paully104.reitzmmo.Party_System.Scoreboard_Custom;
 import com.paully104.reitzmmo.PlayerData.PlayerData;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -56,11 +55,7 @@ public class OnPlayerJoinStatSetup implements Listener {
         API.Players.put(e.getPlayer().getName(), pd); //this loads the player data into the API
 
         //Lets setup the scoreboard
-        Scoreboard_Custom customBoard = new Scoreboard_Custom(p.getName());
-        customBoard.createScoreboard();
-        customBoard.registerNewTeam();
-        customBoard.registerHealth();
-        customBoard.setScoreboardOnPlayer();
+
     }
 
 

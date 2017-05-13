@@ -15,19 +15,11 @@ public class Hologram {
 
 
     public void setHologram(Player p, World w, Location location,int exp) {
-        System.out.println("Hologram: Part A");
-
         ArmorStand a = (ArmorStand)w.spawnEntity(location,EntityType.ARMOR_STAND);
         a.setVisible(false);
         a.setGravity(false);
         a.setCustomName(ChatColor.GREEN+ "+EXP: " + exp);
         a.setCustomNameVisible(true);
 
-        Bukkit.getScheduler().scheduleSyncDelayedTask(API.plugin, new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("Hologram: Part B");
-                a.remove();
-            }
-        },100L);}
+        Bukkit.getScheduler().scheduleSyncDelayedTask(API.plugin, a::remove,100L);}
 }

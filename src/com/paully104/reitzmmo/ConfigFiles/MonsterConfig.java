@@ -32,8 +32,8 @@ public class MonsterConfig {
         configuration.addDefault("CHICKEN", true);
         configuration.addDefault("CHICKEN_BASE_HP", 4);
 
-        configuration.addDefault("COW", false);
-        configuration.addDefault("COW_BASE_HP", 4);
+        configuration.addDefault("COW", true);
+        configuration.addDefault("COW_BASE_HP", 2);
 
         configuration.addDefault("CREEPER", true);
         configuration.addDefault("CREEPER_BASE_ATTACK", 5);
@@ -71,11 +71,11 @@ public class MonsterConfig {
         configuration.addDefault("MAGMACUBE_BASE_HP", 4);
         configuration.addDefault("MAGMACUBE_BASE_ATTACK", 3);
 
-        configuration.addDefault("MUSHROOMCOW", false);
-        configuration.addDefault("MUSHROOMCOW_BASE_HP", 4);
+        configuration.addDefault("MUSHROOMCOW", true);
+        configuration.addDefault("MUSHROOMCOW_BASE_HP", 2);
 
-        configuration.addDefault("PIG", false);
-        configuration.addDefault("PIG_BASE_HP", 4);
+        configuration.addDefault("PIG", true);
+        configuration.addDefault("PIG_BASE_HP", 2);
 
         configuration.addDefault("PIGZOMBIE", true);
         configuration.addDefault("PIGZOMBIE_BASE_HP", 4);
@@ -85,8 +85,8 @@ public class MonsterConfig {
         configuration.addDefault("RABBIT_BASE_HP", 4);
 
 
-        configuration.addDefault("SHEEP", false);
-        configuration.addDefault("SHEEP_BASE_HP", 4);
+        configuration.addDefault("SHEEP", true);
+        configuration.addDefault("SHEEP_BASE_HP", 2);
 
         configuration.addDefault("SILVERFISH", true);
         configuration.addDefault("SILVERFISH_BASE_HP", 4);
@@ -123,8 +123,16 @@ public class MonsterConfig {
         configuration.addDefault("ZOMBIE_BASE_ATTACK", 3);
 
         configuration.addDefault("WITCH", true);
-        configuration.addDefault("ZOMBIE_BASE_HP", 8);
-        configuration.addDefault("ZOMBIE_BASE_ATTACK", 4);
+        configuration.addDefault("WITCH_BASE_HP", 8);
+        configuration.addDefault("WITCH_BASE_ATTACK", 4);
+
+        configuration.addDefault("WITHERSKELETON", true);
+        configuration.addDefault("WITHERSKELETON_BASE_HP", 8);
+        configuration.addDefault("WITHERSKELETON_BASE_ATTACK", 4);
+
+        configuration.addDefault("SHULKER", true);
+        configuration.addDefault("SHULKER_BASE_HP", 8);
+        configuration.addDefault("SHULKER_BASE_ATTACK", 4);
 
 
 

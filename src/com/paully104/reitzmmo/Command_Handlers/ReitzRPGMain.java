@@ -1,11 +1,15 @@
 package com.paully104.reitzmmo.Command_Handlers;
 
 import com.paully104.reitzmmo.ConfigFiles.API;
+import com.paully104.reitzmmo.Menu.Menu;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.ArmorStand;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 
 /**
@@ -16,16 +20,18 @@ public class ReitzRPGMain implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
-        if ((cmd.getName().equalsIgnoreCase("Reitz") || cmd.getName().equalsIgnoreCase("RRM")) && args.length == 0) {
-            sender.sendMessage(ChatColor.GOLD + "~ReitzRPGMMO main  menu listing commands~");
-            sender.sendMessage(ChatColor.GOLD + "1. /Reitz Stats");
-            sender.sendMessage(ChatColor.GOLD + "2. /Reitz Fix");
-            sender.sendMessage(ChatColor.GOLD + "3. /Rparty");
+        if ((cmd.getName().equalsIgnoreCase("Reitz") || cmd.getName().equalsIgnoreCase("RRM") || cmd.getName().equalsIgnoreCase("ReitzMMO")) && args.length == 0) {
+            Bukkit.getPlayer(sender.getName()).openInventory(Menu.GUI_MENU);
+            //The Idea is to make these obsolute with a nifty menu :)
+            //sender.sendMessage(ChatColor.GOLD + "~ReitzRPGMMO main  menu listing commands~");
+            //sender.sendMessage(ChatColor.GOLD + "1. /Reitz Stats");
+            //sender.sendMessage(ChatColor.GOLD + "2. /Reitz Fix");
+            //sender.sendMessage(ChatColor.GOLD + "3. /Rparty");
             return true;
         }
 
 
-        if ((cmd.getName().equalsIgnoreCase("Reitz") || cmd.getName().equalsIgnoreCase("RRM")) && args.length == 1 && args[0].equalsIgnoreCase("Stats")) {
+        if ((cmd.getName().equalsIgnoreCase("Reitz") || cmd.getName().equalsIgnoreCase("RRM") || cmd.getName().equalsIgnoreCase("ReitzMMO")) && args.length == 1 && args[0].equalsIgnoreCase("Stats")) {
 
             sender.sendMessage(ChatColor.GOLD + "|||Current Stats|||");
             sender.sendMessage(ChatColor.GOLD + "     Level: " + API.getPlayerDataFromAPI(Bukkit.getPlayer(sender.getName()), "Level"));
@@ -37,7 +43,7 @@ public class ReitzRPGMain implements CommandExecutor {
             return true;
         }
 
-        if ((cmd.getName().equalsIgnoreCase("Reitz") || cmd.getName().equalsIgnoreCase("RRM")) && args.length == 1 && args[0].equalsIgnoreCase("Fix"))
+        if ((cmd.getName().equalsIgnoreCase("Reitz") || cmd.getName().equalsIgnoreCase("RRM") || cmd.getName().equalsIgnoreCase("ReitzMMO")) && args.length == 1 && args[0].equalsIgnoreCase("FixHealth"))
         {
             Player p = Bukkit.getPlayer(sender.getName());
 
@@ -68,6 +74,19 @@ public class ReitzRPGMain implements CommandExecutor {
                 p.sendMessage("Attack is now: " + API.getPlayerDataFromAPI(p, "Attack"));
                 p.sendMessage("Health is now: " + API.getPlayerDataFromAPI(p, "Health"));
                 p.setMaxHealth(API.getPlayerDataFromAPI(p, "Health"));
+
+            }
+        }
+        if ((cmd.getName().equalsIgnoreCase("Reitz") || cmd.getName().equalsIgnoreCase("RRM") || cmd.getName().equalsIgnoreCase("ReitzMMO")) && args.length == 1 && args[0].equalsIgnoreCase("FixEXP"))
+        {
+            World world = Bukkit.getPlayer(sender.getName()).getWorld();
+            for(Entity e :world.getEntities())
+            {
+                if(e instanceof ArmorStand)
+                {
+                    e.remove();
+
+                }
 
             }
         }

@@ -4,10 +4,15 @@ import com.paully104.reitzmmo.ConfigFiles.API;
 import org.bukkit.Location;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Monster;
 import org.bukkit.entity.Zombie;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
+import org.bukkit.potion.PotionEffect;
+
+import java.util.Random;
 
 /**
  * Created by Paul on 3/22/2016.
@@ -41,6 +46,9 @@ public class MonsterLevelsHealth implements Listener {
     private final int chickenBaseHP = API.monsterConfig.getInt("CHICKEN_BASE_HP");
     private final int cavespiderBaseHP = API.monsterConfig.getInt("CAVESPIDER_BASE_HP");
     private final int blazeBaseHP = API.monsterConfig.getInt("BLAZE_BASE_HP");
+    private final int witchBaseHP = API.monsterConfig.getInt("WITCH_BASE_HP");
+    private final int witherSkeletonBaseHP = API.monsterConfig.getInt("WITHERSKELETON_BASE_HP");
+    private final int shulkerSkeletonBaseHP = API.monsterConfig.getInt("SHULKER_BASE_HP");
 
     private int calculateDistanceFromSpawn(Location worldSpawn, Location monsterSpawn)
     {
@@ -63,16 +71,57 @@ public class MonsterLevelsHealth implements Listener {
     }
 
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.HIGHEST)
     public void applyMonsterLevelOnSpawn(CreatureSpawnEvent e) {
 
         Location worldSpawn = e.getLocation().getWorld().getSpawnLocation();
         Location monsterSpawn = e.getLocation();
         if (monsterSpawn == null) return;//if there's a problem
         int distance = calculateDistanceFromSpawn(worldSpawn, monsterSpawn);
+        Random r = new Random();
+        int low = 0;
+        int high = 100;
+        int result = r.nextInt(high-low) + low;
+        if(result >= 98 && e.getEntity() instanceof Monster)
+        {
+            distance = distance + 25;
+            e.getEntity().setCustomName("King LV "+distance);
+            e.getEntity().setGlowing(true);
 
+        }
+        else if(result >= 90 && e.getEntity() instanceof Monster)
+        {
+            distance = distance + 10;
+            e.getEntity().setCustomName("Notorious LV "+distance);
+            e.getEntity().setGlowing(true);
 
-        e.getEntity().setCustomName("LV "+distance);
+        }
+        else if(result == 66 && e.getEntity() instanceof  Monster)
+        {
+            distance = distance + 6;
+            e.getEntity().setCustomName("Satanic LV "+distance);
+            e.getEntity().setSilent(true);
+            e.getEntity().setGlowing(false);
+        }
+        else if(result <= 1 && e.getEntity() instanceof  Monster)
+        {
+            if(distance > 1) {
+                distance = distance - 1;
+                e.getEntity().setCustomName("Special ED LV " + distance);
+                e.getEntity().setGlowing(false);
+            }
+            else
+            {
+                e.getEntity().setCustomName("Special ED LV " + distance);
+                e.getEntity().setGlowing(false);
+            }
+        }
+
+        else
+        {
+            e.getEntity().setCustomName("LV "+distance);
+        }
+        //updated on 5/7 for bad boys
        e.getEntity().setCustomNameVisible(true);
 
         //configure health per mob
@@ -84,11 +133,11 @@ public class MonsterLevelsHealth implements Listener {
                 e.getEntity().setMaxHealth(distance * zombieBaseHP);
                 e.getEntity().setHealth(distance * zombieBaseHP);
                 //Update onm 4/26/2017 To slow the hell down baby zombies
-                e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).getValue() * 0.8);
+                e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).getValue() * 0.6);
                 //Updated on 4/26/2017 to increase follow_range to 2.0 from 1.25
                 e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).getValue() * 2.00);
                 //updated on 4/26/2017 to increase the chance of getting tons of zombies :)
-                e.getEntity().getAttribute(Attribute.ZOMBIE_SPAWN_REINFORCEMENTS).setBaseValue(e.getEntity().getAttribute(Attribute.ZOMBIE_SPAWN_REINFORCEMENTS).getValue() + 0.25);
+                e.getEntity().getAttribute(Attribute.ZOMBIE_SPAWN_REINFORCEMENTS).setBaseValue(e.getEntity().getAttribute(Attribute.ZOMBIE_SPAWN_REINFORCEMENTS).getValue() + 0.2);
             }
             else
             {
@@ -99,7 +148,8 @@ public class MonsterLevelsHealth implements Listener {
                 //Updated on 4/26/2017 to increase follow_range to 2.0 from 1.25
                 e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).getValue() * 2.00);
                 //updated on 4/26/2017 to increase the chance of getting tons of zombies :)
-                e.getEntity().getAttribute(Attribute.ZOMBIE_SPAWN_REINFORCEMENTS).setBaseValue(e.getEntity().getAttribute(Attribute.ZOMBIE_SPAWN_REINFORCEMENTS).getValue() + 0.25);
+                e.getEntity().getAttribute(Attribute.ZOMBIE_SPAWN_REINFORCEMENTS).setBaseValue(e.getEntity().getAttribute(Attribute.ZOMBIE_SPAWN_REINFORCEMENTS).getValue() + 0.20);
+
             }
         }
 
@@ -107,6 +157,8 @@ public class MonsterLevelsHealth implements Listener {
         {
             e.getEntity().setMaxHealth(distance * wolfBaseHP);
             e.getEntity().setHealth(distance * wolfBaseHP);
+            e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).getValue() * 2.00);
+            e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).getValue()*1.25);
         }
 
         if(e.getEntity().getType() == EntityType.VILLAGER)
@@ -141,7 +193,9 @@ public class MonsterLevelsHealth implements Listener {
             e.getEntity().setMaxHealth(distance * skeletonBaseHP);
             e.getEntity().setHealth(distance * skeletonBaseHP);
             //slower Skellies because they suck
-            e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).getValue()*.9);
+            e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).getValue()*.80);
+            e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).getValue() * 2.00);
+            //Lets slow down the skeleton firing rate to make it more fair UPDATE: Not an accessible trait!
         }
         if(e.getEntity().getType() == EntityType.SILVERFISH)
         {
@@ -195,7 +249,7 @@ public class MonsterLevelsHealth implements Listener {
             e.getEntity().setMaxHealth(distance * ghastBaseHP);
             e.getEntity().setHealth(distance * ghastBaseHP);
             //Slow them down
-            e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).getValue()*.9);
+            e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).getValue()*.85);
         }
         if(e.getEntity().getType() == EntityType.ENDERMITE)
         {
@@ -217,8 +271,11 @@ public class MonsterLevelsHealth implements Listener {
             e.getEntity().setMaxHealth(distance * creeperBaseHP);
             e.getEntity().setHealth(distance * creeperBaseHP);
             //superFastCreepers?
-            e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).getValue()*1.50);
-            e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).getValue()*2.00);
+
+            //this is paul being resonable
+            e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).getValue()*1.4);
+            e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).getValue()*1.75);
+
 
         }
         if(e.getEntity().getType() == EntityType.COW)
@@ -240,6 +297,24 @@ public class MonsterLevelsHealth implements Listener {
         {
             e.getEntity().setMaxHealth(distance * blazeBaseHP);
             e.getEntity().setHealth(distance * blazeBaseHP);
+        }
+        if(e.getEntity().getType() == EntityType.WITCH)
+        {
+            e.getEntity().setMaxHealth(distance * witchBaseHP);
+            e.getEntity().setHealth(distance * witchBaseHP);
+
+        }
+        if(e.getEntity().getType() == EntityType.WITHER_SKELETON)
+        {
+            e.getEntity().setMaxHealth(distance * witherSkeletonBaseHP);
+            e.getEntity().setHealth(distance * witherSkeletonBaseHP);
+
+        }
+        if(e.getEntity().getType() == EntityType.SHULKER)
+        {
+            e.getEntity().setMaxHealth(distance * shulkerSkeletonBaseHP);
+            e.getEntity().setHealth(distance * shulkerSkeletonBaseHP);
+
         }
 
 

@@ -1,8 +1,5 @@
 package com.paully104.reitzmmo.ConfigFiles;
 
-/**
- * Created by Paul on 3/23/2016.
- */
 import java.io.File;
 import java.io.IOException;
 
@@ -15,6 +12,8 @@ public class FileManager
     public static File debugConfig;
     public static File worldConfig;
     public static File partyConfig;
+    public static File weaponskillConfig;
+    public static File customBowConfig;
 
 
 
@@ -26,7 +25,8 @@ public class FileManager
         debugConfig = new File("plugins/ReitzMMO/DebugSettings/DebugConfig.yml");
         worldConfig = new File("plugins/ReitzMMO/WorldSettings/WorldConfig.yml");
         partyConfig = new File("plugins/ReitzMMO/PartySettings/PartyConfig.yml");
-
+        weaponskillConfig = new File("plugins/ReitzMMO/WeaponSkillSettings/WeaponskillConfig.yml");
+        customBowConfig = new File("plugins/ReitzMMO/CustomWeaponSettings/CustomBowConfig.yml");
 
 
     }

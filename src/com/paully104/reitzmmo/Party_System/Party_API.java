@@ -7,9 +7,9 @@ import java.util.HashMap;
  */
 public class Party_API {
     //Rparty accept [passcode] joins party. Need to match password to join
-    public static HashMap<String, Party_Queue> Password_Queue = new HashMap<>();
+    public static final HashMap<String, Party_Queue> Password_Queue = new HashMap<>();
 
-    public static HashMap<String, Party> Party_Leaders = new HashMap<>();
+    public static final HashMap<String, Party> Party_Leaders = new HashMap<>();
                           //person,inviter
-    public static HashMap<String, String>inParty = new HashMap<>();
+    public static final HashMap<String, String>inParty = new HashMap<>();
 }

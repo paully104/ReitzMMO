@@ -13,12 +13,14 @@ import java.util.HashMap;
  */
 public class API {
     //Configs
-    public static HashMap<String, PlayerData> Players = new HashMap<>();
+    public static final HashMap<String, PlayerData> Players = new HashMap<>();
     public static FileConfiguration monsterConfig;
     public static FileConfiguration playerConfig;
     public static FileConfiguration debugConfig;
     public static FileConfiguration worldConfig;
     public static FileConfiguration partyConfig;
+    public static FileConfiguration weaponskillConfig;
+    public static FileConfiguration custombowConfig;
     public static Plugin plugin;
 
     //Start of sets
@@ -31,7 +33,8 @@ public class API {
     public static void setDebugConfig() {
         debugConfig = YamlConfiguration.loadConfiguration(FileManager.debugConfig);
     }
-
+    public static void setWeaponskillConfig() {weaponskillConfig = YamlConfiguration.loadConfiguration(FileManager.weaponskillConfig);}
+    public static void setcustombowConfig() {custombowConfig = YamlConfiguration.loadConfiguration(FileManager.customBowConfig);}
 
     public static int getPlayerDataFromAPI(Player p, String requestedStat)
     {

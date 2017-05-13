@@ -20,7 +20,7 @@ import java.util.List;
 public class PlayerDefeatsMonster implements Listener {
 
     private final int PartyEXPMaxDistance = API.partyConfig.getInt("PartyEXPMaxDistance");
-    private boolean debug = API.debugConfig.getBoolean("PartyEXP");
+    private final boolean debug = API.debugConfig.getBoolean("PartyEXP");
 
     @EventHandler
     public void MonsterDeathCausedBByPlayer(EntityDeathEvent e)
@@ -40,7 +40,7 @@ public class PlayerDefeatsMonster implements Listener {
                 //Party leader kills the mob
 
                 Party party = Party_API.Party_Leaders.get(playerName);
-                List<String> members = party.get_MembersList();
+                @SuppressWarnings("unchecked") List<String> members = party.get_MembersList();
                 System.out.println(party.get_MembersList());
 
                 for(String people : members)
@@ -126,9 +126,15 @@ public class PlayerDefeatsMonster implements Listener {
             }
             else
             {
-
+                String monster_level_from_name = "1";
                 Integer currentexp = API.Players.get(player.getName()).getData().getInt("Combat-EXP");
-                String monster_level_from_name = dead.getCustomName().replaceAll("\\D+", "");
+                try {
+                    monster_level_from_name = dead.getCustomName().replaceAll("\\D+", "");
+                }
+                catch (NullPointerException ignored)
+                {
+
+                }
                 monster_level = Integer.parseInt(monster_level_from_name);
                 int new_exp = currentexp + (monster_level*2);
                 API.Players.get(player.getName()).getData().set("Combat-EXP", new_exp);

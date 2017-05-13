@@ -16,8 +16,8 @@ import org.bukkit.plugin.Plugin;
 
 public class PlayerData {
 
-    private String name;
-    private FileConfiguration config;
+    private final String name;
+    private final FileConfiguration config;
     private File file;
     private static File dir;
     private static Plugin plugin;
@@ -33,8 +33,9 @@ public class PlayerData {
 
     public static void setup(Plugin instance) {
         plugin = instance;
-        dir = new File(plugin.getDataFolder() + File.separator + "players");
+        dir = new File(plugin.getDataFolder() + File.separator + "Players");
         if (!dir.exists()) {
+            //noinspection ResultOfMethodCallIgnored
             dir.mkdir();
             plugin.getLogger().fine("The player data directories have been setup.");
         }
@@ -52,6 +53,7 @@ public class PlayerData {
         if (file.exists()) {
             file = new File(dir + File.separator + this.name + ".yml");
             try {
+                //noinspection ResultOfMethodCallIgnored
                 file.createNewFile();
                 if (this.debug)
                     plugin.getLogger().fine("The data file for " + this.name + " has been created.");
