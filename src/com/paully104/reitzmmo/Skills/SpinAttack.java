@@ -13,7 +13,7 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 /**
  * Created by Paul on 4/30/2017.
  */
-public class SpinAttack {
+class SpinAttack {
 
     private static final int spinAttackLevel = API.weaponskillConfig.getInt("Spin_Attack_Level");
     private static final int spinAttackDamageScale = API.weaponskillConfig.getInt("Spin_Attack_Damage_Scale");
@@ -44,7 +44,7 @@ public class SpinAttack {
                                             if (other instanceof Damageable) {
                                                 //lv 1 spin attack does 2 damage + (level + scale so 1* 2) so 4.
 
-                                                ((Damageable) other).damage(Weapon_Skills.calculateWeaponSkillDamage(e.getPlayer(), other, spinAttackDamageScale), e.getPlayer());
+                                                ((Damageable) other).damage(Weapon_Skills.calculateWeaponSkillDamage(e.getPlayer(), other), e.getPlayer());
                                             }
                                             //Bukkit.getPluginManager().callEvent(new EntityDamageEvent(other, EntityDamageEvent.DamageCause.CUSTOM,calculateWeaponSkillDamage(e.getPlayer(),other)));
 

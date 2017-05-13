@@ -2,13 +2,12 @@ package com.paully104.reitzmmo.Skills;
 
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
-import org.bukkit.entity.Projectile;
 import org.bukkit.event.entity.EntityShootBowEvent;
 
 /**
  * Created by Paul on 5/7/2017.
  */
-public class Chicken_Launcher {
+class Chicken_Launcher {
 
     public static void performChickenLauncher(EntityShootBowEvent event, Entity arrow)
     {

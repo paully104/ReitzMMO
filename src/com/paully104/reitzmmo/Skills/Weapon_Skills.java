@@ -13,7 +13,6 @@ import org.bukkit.event.player.PlayerToggleSneakEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.util.Vector;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -24,7 +23,7 @@ import java.util.Map;
 public class Weapon_Skills implements Listener {
 
     //Get values from config
-
+    private static final int spinAttackDamageScale = API.weaponskillConfig.getInt("Spin_Attack_Damage_Scale");
 
 
 /*WEAPON SKILL LIST
@@ -109,7 +108,7 @@ public class Weapon_Skills implements Listener {
                             Player p = (Player)event.getEntity();
                             PlayerData pd = API.Players.get(p.getName());
                             int level = pd.getData().getInt("Level");
-                            Bomb_Arrow.performFireArrow(event,arrow,level);
+                            Bomb_Arrow.performFireArrow(event,arrow);
 
 
                         }
@@ -168,7 +167,7 @@ public class Weapon_Skills implements Listener {
 
 
 
-    public static int calculateWeaponSkillDamage(Entity player, Entity monster, int weaponskillscale) {
+    public static int calculateWeaponSkillDamage(Entity player, Entity monster) {
         //Make this so you put in the weapon skill information and it calculates it all
         int player_attack = 0;
         int monster_defense = 0;
@@ -183,7 +182,7 @@ public class Weapon_Skills implements Listener {
         //level up their attack increases
         //so attack will go 2 4 6 8 10 12 14 16 so if we add the base damage of the weaponskill like +2 then
         // a level one with do 2*2 then a level two will do 4 * 2 SO BASE DAMAGE IS RETARDED
-        damage_done = (player_attack * weaponskillscale) - monster_defense;
+        damage_done = (player_attack * spinAttackDamageScale) - monster_defense;
         if (damage_done < 1) {
             damage_done = 1;
         }

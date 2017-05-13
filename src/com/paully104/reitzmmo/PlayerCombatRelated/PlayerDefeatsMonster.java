@@ -23,7 +23,7 @@ public class PlayerDefeatsMonster implements Listener {
     private final boolean debug = API.debugConfig.getBoolean("PartyEXP");
 
     @EventHandler
-    public void MonsterDeathCausedBByPlayer(EntityDeathEvent e)
+    public void MonsterDeathCausedByPlayer(EntityDeathEvent e)
     {
 
 

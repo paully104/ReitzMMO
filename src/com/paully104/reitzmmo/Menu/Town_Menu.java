@@ -1,7 +1,6 @@
 package com.paully104.reitzmmo.Menu;
 
 import com.paully104.reitzmmo.ConfigFiles.API;
-import com.paully104.reitzmmo.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -31,9 +30,9 @@ public class Town_Menu implements Listener {
     static {
         //Icons
 
-        createDisplay(Material.GRASS, TOWN_MENU,0,"Starting Fort","Teleport to Starting Fort");
-        createDisplay(Material.ARMOR_STAND, TOWN_MENU,1,"Friend Zone","Teleport to Friend Zone");
-        createDisplay(Material.REDSTONE_BLOCK, TOWN_MENU, 8, "Return To Menu", "Return to Reitz menu screen");
+        createDisplay(Material.GRASS, 0,"Starting Fort","Teleport to Starting Fort");
+        createDisplay(Material.ARMOR_STAND, 1,"Friend Zone","Teleport to Friend Zone");
+        createDisplay(Material.REDSTONE_BLOCK, 8, "Return To Menu", "Return to Reitz menu screen");
         //GUI_MENU.setItem(0, new ItemStack(Material.DIRT, 3));
         //GUI_MENU.setItem(8, new ItemStack(Material.GOLD_BLOCK, 4));
         //The first parameter, is the slot that is assigned to. Starts counting at 0
@@ -70,20 +69,17 @@ public class Town_Menu implements Listener {
                     player.sendMessage(ChatColor.YELLOW + "Teleport will cancel if health is lost!");
                     //Make the character wait 5 seconds of no damage
                     double health = player.getHealth();
-                    Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(API.plugin, new Runnable() {
-                        @Override
-                        public void run() {
-                            if(player.getHealth() >= health)
-                            {
-                                player.teleport(new Location(Bukkit.getWorld("world"),-291.624,76,313.300));
+                    Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(API.plugin, () -> {
+                        if(player.getHealth() >= health)
+                        {
+                            player.teleport(new Location(Bukkit.getWorld("world"),-291.624,76,313.300));
 
-                            }
-                            else
-                            {
-                                player.sendMessage(ChatColor.RED + "Can't teleport while in combat!");
-                            }
-                            //YOUR MESSAGE TO SAY AFTER THEY SAY STUFF
                         }
+                        else
+                        {
+                            player.sendMessage(ChatColor.RED + "Can't teleport while in combat!");
+                        }
+                        //YOUR MESSAGE TO SAY AFTER THEY SAY STUFF
                     }, 100); //5000 MEANS WAIT 5 SECCONDS BEFORE RUNNING THE CODE ABOVE
 
                 }
@@ -94,20 +90,17 @@ public class Town_Menu implements Listener {
                     player.sendMessage(ChatColor.YELLOW + "Teleport will cancel if health is lost!");
                     double health = player.getHealth();
                     //wait 5 seconds
-                    Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(API.plugin, new Runnable() {
-                        @Override
-                        public void run() {
-                            if(player.getHealth() >= health)
-                            {
-                                player.teleport(new Location(Bukkit.getWorld("world"),-136.302,63,193.659)); // Adds dirt
+                    Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(API.plugin, () -> {
+                        if(player.getHealth() >= health)
+                        {
+                            player.teleport(new Location(Bukkit.getWorld("world"),-136.302,63,193.659)); // Adds dirt
 
-                            }
-                            else
-                            {
-                                player.sendMessage(ChatColor.RED + "Can't teleport while in combat!");
-                            }
-                            //YOUR MESSAGE TO SAY AFTER THEY SAY STUFF
                         }
+                        else
+                        {
+                            player.sendMessage(ChatColor.RED + "Can't teleport while in combat!");
+                        }
+                        //YOUR MESSAGE TO SAY AFTER THEY SAY STUFF
                     }, 100); //5000 MEANS WAIT 5 SECCONDS BEFORE RUNNING THE CODE ABOVE
 
 
@@ -121,7 +114,7 @@ public class Town_Menu implements Listener {
             }
         }
     }
-    private static void createDisplay(Material material, Inventory inv, int Slot, String name, String lore) {
+    private static void createDisplay(Material material, int Slot, String name, String lore) {
         ItemStack item = new ItemStack(material);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(name);
@@ -130,7 +123,7 @@ public class Town_Menu implements Listener {
         meta.setLore(Lore);
         item.setItemMeta(meta);
 
-        inv.setItem(Slot, item);
+        Town_Menu.TOWN_MENU.setItem(Slot, item);
 
     }
 }

@@ -36,13 +36,13 @@ public class Party_Menu implements Listener{
         sender.sendMessage(ChatColor.GOLD + "5. /Rparty members");
         sender.sendMessage(ChatColor.GOLD + "t. /Rparty leave");
         */
-        createDisplay(Material.WORKBENCH, PARTY_MENU, 0, "Create", "Create a party!");
-        createDisplay(Material.ARROW, PARTY_MENU, 1, "Add", "[Add member to party] Use /Rparty add USERNAME");
-        createDisplay(Material.BEDROCK, PARTY_MENU, 2, "Remove", "[Remove member from party]Use /Rparty remove USERNAME");
-        createDisplay(Material.SKULL_ITEM, PARTY_MENU, 3, "Disband", "Disband the party");
-        createDisplay(Material.SHIELD, PARTY_MENU, 4, "Get Members", "Show party members");
-        createDisplay(Material.EXPLOSIVE_MINECART, PARTY_MENU, 5, "Leave", "Leave a party");
-        createDisplay(Material.REDSTONE_BLOCK, PARTY_MENU, 8, "Return To Menu", "Return to Reitz menu screen");
+        createDisplay(Material.WORKBENCH, 0, "Create", "Create a party!");
+        createDisplay(Material.ARROW, 1, "Add", "[Add member to party] Use /Rparty add USERNAME");
+        createDisplay(Material.BEDROCK, 2, "Remove", "[Remove member from party]Use /Rparty remove USERNAME");
+        createDisplay(Material.SKULL_ITEM, 3, "Disband", "Disband the party");
+        createDisplay(Material.SHIELD, 4, "Get Members", "Show party members");
+        createDisplay(Material.EXPLOSIVE_MINECART, 5, "Leave", "Leave a party");
+        createDisplay(Material.REDSTONE_BLOCK, 8, "Return To Menu", "Return to Reitz menu screen");
 
 
         //GUI_MENU.setItem(0, new ItemStack(Material.DIRT, 3));
@@ -128,7 +128,7 @@ public class Party_Menu implements Listener{
 
     }
 
-    private static void createDisplay(Material material, Inventory inv, int Slot, String name, String lore) {
+    private static void createDisplay(Material material, int Slot, String name, String lore) {
         ItemStack item = new ItemStack(material);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(name);
@@ -137,7 +137,7 @@ public class Party_Menu implements Listener{
         meta.setLore(Lore);
         item.setItemMeta(meta);
 
-        inv.setItem(Slot, item);
+        Party_Menu.PARTY_MENU.setItem(Slot, item);
 
     }
 

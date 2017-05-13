@@ -81,7 +81,6 @@ public class PlayerAttackingMonster implements Listener {
                 monster_defense = Integer.parseInt(monster_level_from_name);
                 //updated on 5/6/2017 to add new custom bow recipes
                 damage_done = player_attack - monster_defense + Custom_Bows.getBowDamage(((Player) shooter).getInventory().getItemInMainHand());
-                ;
                 System.out.println("Damage Done: " + player_attack + " " + monster_defense + " " + Custom_Bows.getBowDamage(((Player) shooter).getInventory().getItemInMainHand()));
 
                 //custom item logic

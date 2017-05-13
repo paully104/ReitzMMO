@@ -7,7 +7,7 @@ import org.bukkit.event.entity.EntityShootBowEvent;
 /**
  * Created by Paul on 5/7/2017.
  */
-public class Llama_Launcher {
+class Llama_Launcher {
 
     public static void performLlamaLauncher(EntityShootBowEvent event, Entity arrow)
     {

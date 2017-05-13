@@ -2,7 +2,6 @@ package com.paully104.reitzmmo.Menu;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -36,13 +35,13 @@ public class Menu implements Listener {
     static {
         //Icons
 
-        createDisplay(Material.BED, GUI_MENU, 0, "Home","Teleport to your home point!");
-        createDisplay(Material.WOOD_AXE, GUI_MENU, 2, "Stats","Get your combat stats!");
-        createDisplay(Material.WORKBENCH, GUI_MENU, 3, "Fix Health","If your health is bugged fix it");
-        createDisplay(Material.BANNER, GUI_MENU, 4, "Party","Get the party commands!");
-        createDisplay(Material.SPECTRAL_ARROW, GUI_MENU, 5, "Weaponskills","Apply weaponskills");
-        createDisplay(Material.ARMOR_STAND, GUI_MENU, 6, "Fix EXP","Fix floating EXP");
-        createDisplay(Material.MAP, GUI_MENU, 7, "Town Menu","Teleport to a town");
+        createDisplay(Material.BED, 0, "Home","Teleport to your home point!");
+        createDisplay(Material.WOOD_AXE, 2, "Stats","Get your combat stats!");
+        createDisplay(Material.WORKBENCH, 3, "Fix Health","If your health is bugged fix it");
+        createDisplay(Material.BANNER, 4, "Party","Get the party commands!");
+        createDisplay(Material.SPECTRAL_ARROW, 5, "Weaponskills","Apply weaponskills");
+        createDisplay(Material.ARMOR_STAND, 6, "Fix EXP","Fix floating EXP");
+        createDisplay(Material.MAP, 7, "Town Menu","Teleport to a town");
         //GUI_MENU.setItem(0, new ItemStack(Material.DIRT, 3));
         //GUI_MENU.setItem(8, new ItemStack(Material.GOLD_BLOCK, 4));
         //The first parameter, is the slot that is assigned to. Starts counting at 0
@@ -75,20 +74,17 @@ public class Menu implements Listener {
                     double health = player.getHealth();
                     player.sendMessage(ChatColor.YELLOW + "Teleporting in 5 seconds");
                     player.sendMessage(ChatColor.YELLOW + "Teleport will cancel if health is lost!");
-                    Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
-                        @Override
-                        public void run() {
-                            if(player.getHealth() >= health)
-                            {
-                                player.teleport(player.getBedSpawnLocation()); // Adds dirt
+                    Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(plugin, () -> {
+                        if(player.getHealth() >= health)
+                        {
+                            player.teleport(player.getBedSpawnLocation()); // Adds dirt
 
-                            }
-                            else
-                            {
-                                player.sendMessage(ChatColor.RED + "Can't teleport while in combat!");
-                            }
-                            //YOUR MESSAGE TO SAY AFTER THEY SAY STUFF
                         }
+                        else
+                        {
+                            player.sendMessage(ChatColor.RED + "Can't teleport while in combat!");
+                        }
+                        //YOUR MESSAGE TO SAY AFTER THEY SAY STUFF
                     }, 100); //5000 MEANS WAIT 5 SECCONDS BEFORE RUNNING THE CODE ABOVE
 
 
@@ -141,7 +137,7 @@ public class Menu implements Listener {
 
     }
 
-    private static void createDisplay(Material material, Inventory inv, int Slot, String name, String lore) {
+    private static void createDisplay(Material material, int Slot, String name, String lore) {
         ItemStack item = new ItemStack(material);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(name);
@@ -150,7 +146,7 @@ public class Menu implements Listener {
         meta.setLore(Lore);
         item.setItemMeta(meta);
 
-        inv.setItem(Slot, item);
+        Menu.GUI_MENU.setItem(Slot, item);
 
     }
 

@@ -42,15 +42,15 @@ import java.util.Map;
     /* put spell on weapons so they can swap around
 
      */
-        createDisplay(Material.SPECTRAL_ARROW, WEAPONSKILL_MENU, 0, "Spin Attack","[Level 2] SPIN ATTACKAROOO");
-        createDisplay(Material.SPECTRAL_ARROW, WEAPONSKILL_MENU, 1, "Heavy Swing","[Level 4] Heavy Swing");
-        createDisplay(Material.SPECTRAL_ARROW, WEAPONSKILL_MENU, 2, "WORK IN PROGRESS","WORK IN PROGRESS");
-        createDisplay(Material.SPECTRAL_ARROW, WEAPONSKILL_MENU, 3, "WORK IN PROGRESS","WORK IN PROGRESS");
-        createDisplay(Material.BOW, WEAPONSKILL_MENU, 4,"Barrage","[Level 2]Barrage");
-        createDisplay(Material.BOW, WEAPONSKILL_MENU, 5,"Bomb Arrow","[Level 2]Bomb Arrow");
-        createDisplay(Material.BOW, WEAPONSKILL_MENU, 6,"Chicken launcher","[Level 2]Chicken launcher");
-        createDisplay(Material.BOW, WEAPONSKILL_MENU, 7,"Shift Back","[Level 2]Shift Back");
-        createDisplay(Material.REDSTONE_BLOCK, WEAPONSKILL_MENU, 8, "Main Menu","Return to main menu");
+        createDisplay(Material.SPECTRAL_ARROW, 0, "Spin Attack","[Level 2] SPIN ATTACKAROOO");
+        createDisplay(Material.SPECTRAL_ARROW, 1, "Heavy Swing","[Level 4] Heavy Swing");
+        createDisplay(Material.SPECTRAL_ARROW, 2, "WORK IN PROGRESS","WORK IN PROGRESS");
+        createDisplay(Material.SPECTRAL_ARROW, 3, "WORK IN PROGRESS","WORK IN PROGRESS");
+        createDisplay(Material.BOW, 4,"Barrage","[Level 2]Barrage");
+        createDisplay(Material.BOW, 5,"Bomb Arrow","[Level 2]Bomb Arrow");
+        createDisplay(Material.BOW, 6,"Chicken launcher","[Level 2]Chicken launcher");
+        createDisplay(Material.BOW, 7,"Shift Back","[Level 2]Shift Back");
+        createDisplay(Material.REDSTONE_BLOCK, 8, "Main Menu","Return to main menu");
 
         //GUI_MENU.setItem(0, new ItemStack(Material.DIRT, 3));
         //GUI_MENU.setItem(8, new ItemStack(Material.GOLD_BLOCK, 4));
@@ -274,7 +274,7 @@ import java.util.Map;
         }
 
     }
-    private static void createDisplay(Material material, Inventory inv, int Slot, String name, String lore) {
+    private static void createDisplay(Material material, int Slot, String name, String lore) {
         ItemStack item = new ItemStack(material);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(name);
@@ -282,7 +282,7 @@ import java.util.Map;
         Lore.add(lore);
         meta.setLore(Lore);
         item.setItemMeta(meta);
-        inv.setItem(Slot, item);
+        Weaponskill_Menu.WEAPONSKILL_MENU.setItem(Slot, item);
 
     }
 

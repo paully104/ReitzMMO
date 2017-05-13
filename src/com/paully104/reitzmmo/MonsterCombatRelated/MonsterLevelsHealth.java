@@ -10,7 +10,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
-import org.bukkit.potion.PotionEffect;
 
 import java.util.Random;
 
@@ -263,6 +262,8 @@ public class MonsterLevelsHealth implements Listener {
         }
         if(e.getEntity().getType() == EntityType.ENDER_DRAGON)
         {
+            //Lets make the dragon scary
+            distance = 250;
             e.getEntity().setMaxHealth(distance * enderdragonBaseHP);
             e.getEntity().setHealth(distance * enderdragonBaseHP);
         }

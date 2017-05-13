@@ -5,6 +5,4 @@ package com.paully104.reitzmmo.Enum;
  */
 class Enchantment_Damage {
 
-    public enum Enchantment_Damages {
-    }
 }

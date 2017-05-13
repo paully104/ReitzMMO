@@ -1,16 +1,12 @@
 package com.paully104.reitzmmo.Skills;
 
-import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Entity;
-import org.bukkit.entity.Player;
 import org.bukkit.event.entity.EntityShootBowEvent;
-import org.bukkit.event.player.PlayerInteractEntityEvent;
-import org.bukkit.util.Vector;
 
 /**
  * Created by Paul on 5/6/2017.
  */
-public class Barrage {
+class Barrage {
 
     public static void performBarrage(EntityShootBowEvent event, Entity arrow)
     {

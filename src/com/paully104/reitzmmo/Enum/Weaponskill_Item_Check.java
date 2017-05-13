@@ -7,14 +7,14 @@ public class Weaponskill_Item_Check {
 
     public enum Weaponskill_Check
     {
-        WOOD_SWORD(true), GOLD_SWORD(true), STONE_SWORD(true), IRON_SWORD(true), DIAMOND_SWORD(true),
-        WOOD_AXE(true), GOLD_AXE(true), STONE_AXE(true), IRON_AXE(true), DIAMOND_AXE(true),
-        WOOD_SPADE(true), GOLD_SPADE(true), STONE_SPADE(true), IRON_SPADE(true), DIAMOND_SPADE(true),
-        WOOD_HOE(true), GOLD_HOE(true), STONE_HOE(true), IRON_HOE(true), DIAMOND_HOE(true);
+        WOOD_SWORD(), GOLD_SWORD(), STONE_SWORD(), IRON_SWORD(), DIAMOND_SWORD(),
+        WOOD_AXE(), GOLD_AXE(), STONE_AXE(), IRON_AXE(), DIAMOND_AXE(),
+        WOOD_SPADE(), GOLD_SPADE(), STONE_SPADE(), IRON_SPADE(), DIAMOND_SPADE(),
+        WOOD_HOE(), GOLD_HOE(), STONE_HOE(), IRON_HOE(), DIAMOND_HOE();
         private final boolean value;
 
-        Weaponskill_Check(boolean value) {
-            this.value = value;
+        Weaponskill_Check() {
+            this.value = true;
         }
 
         public boolean getValue() {
