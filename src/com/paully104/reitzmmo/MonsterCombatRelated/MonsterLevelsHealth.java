@@ -2,14 +2,17 @@ package com.paully104.reitzmmo.MonsterCombatRelated;
 
 import com.paully104.reitzmmo.ConfigFiles.API;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.EntityType;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Monster;
 import org.bukkit.entity.Zombie;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
+import org.bukkit.inventory.ItemStack;
 
 import java.util.Random;
 
@@ -108,11 +111,13 @@ public class MonsterLevelsHealth implements Listener {
                 distance = distance - 1;
                 e.getEntity().setCustomName("Special ED LV " + distance);
                 e.getEntity().setGlowing(false);
+                e.getEntity().getEquipment().setHelmet(new ItemStack(Material.BUCKET,1));
             }
             else
             {
                 e.getEntity().setCustomName("Special ED LV " + distance);
                 e.getEntity().setGlowing(false);
+                e.getEntity().getEquipment().setHelmet(new ItemStack(Material.BUCKET,1));
             }
         }
 
@@ -273,7 +278,7 @@ public class MonsterLevelsHealth implements Listener {
             e.getEntity().setHealth(distance * creeperBaseHP);
             //superFastCreepers?
 
-            //this is paul being resonable
+            //this is paul being reasonable
             e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).getValue()*1.4);
             e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).setBaseValue(e.getEntity().getAttribute(Attribute.GENERIC_FOLLOW_RANGE).getValue()*1.75);
 

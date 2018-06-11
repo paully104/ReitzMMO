@@ -13,7 +13,8 @@ class Barrage {
 
         for (int i = 1; i < 5; i++)
         {
-            arrow.getWorld().spawnArrow(arrow.getLocation().add(0,i,0), arrow.getVelocity(), 3, 3).setShooter(event.getEntity());
+            /*Barrage needs to be more fluid was originally 0,i,0 */
+            arrow.getWorld().spawnArrow(arrow.getLocation().add(0,1,0), arrow.getVelocity(), 3, 3).setShooter(event.getEntity());
         }
 
 

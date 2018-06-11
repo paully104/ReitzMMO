@@ -56,7 +56,7 @@ class SpinAttack {
                             }
                             else
                             {
-                                p.sendMessage(ChatColor.RED + "Target is out of range!");
+                                p.sendMessage(ChatColor.RED + "[ERROR]" + ChatColor.WHITE + " Target is out of range");
 
                             }
                         }

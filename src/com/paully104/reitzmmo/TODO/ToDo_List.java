@@ -23,7 +23,7 @@ class ToDo_List {
 
     [Class System]
     1) Create Warrior class which uses Sword/Shield Axe
-    2) Create Ranger Bow and arrowe
+    2) Create Ranger Bow and arrow
     3) Wizard class
 
     [Requirement System For Items]
